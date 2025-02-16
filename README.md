@@ -9,5 +9,6 @@ Gestionnaire de bibliothèque : les fonctionnalités suivantes ont été dévelo
 - Rendre un livre par un client
 - Des scénarios invalides ont été considérés
 
+La collection Postman pour tester l'API et la documentation est disponible dans : /postman/Book API.postman_collection.json
 
 

@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "3c6bf280-1516-4bd7-80c3-7b35a46764dd",
+		"name": "Book API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "42355613"
+	},
+	"item": [
+		{
+			"name": "BOOKS",
+			"item": [
+				{
+					"name": "Get all books",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5265/api/books",
+						"description": "API for retrieving all books"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a book",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5265/api/books/1",
+						"description": "API for book retrieval - {id}"
+					},
+					"response": []
+				},
+				{
+					"name": "Insert books",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n  \"title\": \"Complètement cramé !\",\r\n  \"author\": \"Gilles Legardinier\",\r\n  \"price\": 29.99,\r\n  \"description\": \"Andrew Blake est un sexagénaire, veuf, chef d'une entreprise de boîtes métalliques. Alors que seul, il ne trouve plus de sens à sa vie, et la pensant d'ailleurs derrière lui, il décide de léguer la direction de son entreprise à son assistante pour partir en France. La France est un pays qui lui tient à cœur.\"\r\n},\r\n\r\n{\r\n  \"title\": \"Sapiens\",\r\n  \"author\": \"Yuval Noah Harari\",\r\n  \"price\": 23.90,\r\n  \"description\": \"L'historien décrit comment l'espèce Homo sapiens a réussi à survivre et à dominer la planète. Il poursuit son analyse de l'humanité en expliquant la naissance de concepts tels que la religion, la nation, les droits de l'homme.\"\r\n}\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5265/api/books",
+						"description": "API for adding books with title, author, price and description"
+					},
+					"response": []
+				},
+				{
+					"name": "Insert one book",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Complètement cramé !\",\r\n  \"author\": \"Gilles Legardinier\",\r\n  \"price\": 29.99,\r\n  \"description\": \"Andrew Blake est un sexagénaire, veuf, chef d'une entreprise de boîtes métalliques. Alors que seul, il ne trouve plus de sens à sa vie, et la pensant d'ailleurs derrière lui, il décide de léguer la direction de son entreprise à son assistante pour partir en France. La France est un pays qui lui tient à cœur.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5265/api/books/1",
+						"description": "API for adding a book"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a book",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5265/api/books/1",
+						"description": "API for deleting a book"
+					},
+					"response": []
+				}
+			],
+			"description": "API about books in the libraby."
+		},
+		{
+			"name": "CLIENTS",
+			"item": [
+				{
+					"name": "Get all clients",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5265/api/clients",
+						"description": "API for retrieving all clients"
+					},
+					"response": []
+				},
+				{
+					"name": "Get a client",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:5265/api/clients/1",
+						"description": "API for client retrieval - {id}"
+					},
+					"response": []
+				},
+				{
+					"name": "Insert clients",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n  \"name\": \"Marion PLASSAIS\",\r\n  \"age\": 26\r\n  },\r\n{\r\n  \"name\": \"Jane DOE\",\r\n  \"age\": 35\r\n  }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5265/api/clients",
+						"description": "API for adding clients with name and age."
+					},
+					"response": []
+				},
+				{
+					"name": "Insert one client",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Marion PLASSAIS\",\r\n  \"age\": 26\r\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:5265/api/clients/1",
+						"description": "API for adding a client"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a client",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:5265/api/clients/1",
+						"description": "API for deleting a client"
+					},
+					"response": []
+				}
+			],
+			"description": "API about clients."
+		},
+		{
+			"name": "Borrow a book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5265/api/books/borrowBook/1?client=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5265",
+					"path": [
+						"api",
+						"books",
+						"borrowBook",
+						"1"
+					],
+					"query": [
+						{
+							"key": "client",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return a book",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5265/api/books/returnBook/1?client=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5265",
+					"path": [
+						"api",
+						"books",
+						"returnBook",
+						"1"
+					],
+					"query": [
+						{
+							"key": "client",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
